@@ -8,6 +8,7 @@ import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
 import java.net.Inet4Address;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -32,6 +33,6 @@ public class User {
     private Set<String> skills;
     private Map<String, Integer> scores;
     @Column("create_time")
-    private LocalDateTime createTime;
+    private Instant createTime;
 
 }

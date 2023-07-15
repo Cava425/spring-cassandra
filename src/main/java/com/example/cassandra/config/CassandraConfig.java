@@ -18,6 +18,11 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
     }
 
     @Override
+    protected int getPort() {
+        return 9042;
+    }
+
+    @Override
     protected String getKeyspaceName() {
         return "for_test";
     }
